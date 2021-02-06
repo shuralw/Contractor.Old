@@ -15,6 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="metamodell.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Tools\LogoWriter\speed.flf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

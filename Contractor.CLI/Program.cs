@@ -32,6 +32,11 @@ namespace Contractor.CLI
                     HandleMainJobs(args);
                     break;
 
+                case "import":
+                    ImportHandler importHandler = new ImportHandler();
+                    importHandler.PerformImport(args);
+                    break;
+
                 default:
                     Console.WriteLine("Der Befehl '" + args[0] + "' konnte nicht gefunden werden.");
                     Console.WriteLine("Benutze 'contractor help' um die Hilfe anzuzeigen.");
