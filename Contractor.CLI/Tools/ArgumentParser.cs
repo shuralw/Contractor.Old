@@ -1,5 +1,4 @@
 ﻿using Contractor.Core.Helpers;
-using System;
 using System.Linq;
 
 namespace Contractor.CLI.Tools

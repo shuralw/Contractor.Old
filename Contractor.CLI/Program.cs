@@ -22,14 +22,15 @@ namespace Contractor.CLI
                     ContractorHelp.WriteHelp();
                     break;
 
-                case "test":
-                    Test.Testen();
-                    break;
-
                 case "add":
                 case "rename":
                 case "remove":
                     HandleMainJobs(args);
+                    break;
+
+                case "import":
+                    ImportHandler importHandler = new ImportHandler();
+                    importHandler.PerformImport(args);
                     break;
 
                 default:
@@ -59,10 +60,6 @@ namespace Contractor.CLI
 
                 case "property":
                     PropertyHandler.Perform(args);
-                    break;
-
-                case "relation":
-                    RelationHandler.Perform(args);
                     break;
 
                 default:

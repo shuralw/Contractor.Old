@@ -2,8 +2,8 @@
   "profiles": {
     "Contractor.CLI": {
       "commandName": "Project",
-      "commandLineArgs": "test",
-      "sqlDebugging": false
+      "commandLineArgs": "import ./metamodell.txt",
+      "workingDirectory": "C:\\Entwicklung\\Contractor\\Contract.Architecture\\Contract.Architecture.Backend"
     }
   }
 }

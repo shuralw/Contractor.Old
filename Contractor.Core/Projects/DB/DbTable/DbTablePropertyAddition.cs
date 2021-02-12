@@ -46,7 +46,7 @@ namespace Contractor.Core.Tools
             // TODO: PropertyName length determines spaces betweeen name and type
             if (options.PropertyType == "string")
             {
-                return $"	[{options.PropertyName}]	   NVARCHAR ({options.PropertyTypeExtra})   NOT NULL,";
+                return $"	[{options.PropertyName}]	   NVARCHAR ({options.PropertyTypeExtra??"50"})   NOT NULL,";
             }
             else if (options.PropertyType == "int")
             {
